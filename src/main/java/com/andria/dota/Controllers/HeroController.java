@@ -27,6 +27,7 @@ import com.andria.dota.Model.Hero;
 @RequestMapping("/heroes")
 public class HeroController {
 
+	//Test github
   //My hero repo , this acts like a middleman/presenter delegating responsibility to the correct
  //Locations	
 
@@ -59,7 +60,7 @@ public class HeroController {
   //Role simply refers to the job thew hero was made to carry out within
   //The context of the game
   
-	@GetMapping("/heroes/{role}")
+	@GetMapping("/heroes/{roles}")
 	public List<Hero>heroesMatching(@PathVariable String[] roles) {
 
 		return myrepo.findMatchingHeroes(roles);
